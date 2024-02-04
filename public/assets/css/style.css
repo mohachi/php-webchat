@@ -1,0 +1,137 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.2rem;
+    font-family: sans-serif;
+    background-color: #9CAAB9;
+}
+
+input:focus,
+textarea:focus
+{
+    outline: 0;
+}
+
+.panel
+{
+    border-radius: 5px;
+    background: #ACBAC9;
+}
+
+.join-box
+{
+    width: 20rem;
+    padding: 1rem;
+    margin: 10rem auto;
+}
+
+.join-box .join-form .join-field
+{
+    border: 0;
+    margin: 0;
+    width: 100%;
+    color: #1C2A39;
+    padding: .4rem;
+    display: block;
+    border-radius: 5px;
+    font-size: inherit;
+    background: #ACBAC9;
+    line-height: inherit;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px #8C9AA9;
+}
+
+.join-box .join-form .join-btn
+{
+    border: 0;
+    color: #1C2A39;
+    display: block;
+    margin: 1rem auto;
+    font-size: inherit;
+    border-radius: 5px;
+    padding: .4rem 2rem;
+    background-color: #8C9AA9;
+    box-shadow: 0 0 5px #2C3A49;
+}
+.join-box .join-form .join-btn:focus
+{
+    box-shadow: inset 0 0 5px #2C3A49;
+}
+
+.chat-container
+{
+    gap: 1rem;
+    color: #333;
+    margin: auto;
+    padding: 1rem;
+    height: 100vh;
+    display: flex;
+    max-width: 40rem;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.chat-container .messages-container
+{
+    gap: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    overflow-y: auto;
+    border-radius: 5px;
+    background: #ACBAC9;
+    padding: 1rem 1.4rem;
+    flex-direction: column;
+}
+
+.chat-container .messages-container .message
+{
+    gap: 1rem;
+    display: flex;
+}
+
+.chat-container .messages-container .message .author
+{
+    font-weight: bold;
+}
+.chat-container .messages-container .message .author::before
+{
+    content: "[";
+}
+.chat-container .messages-container .message .author::after
+{
+    content: "]";
+}
+
+.chat-container .messaging-form
+{
+    display: flex;
+    border-radius: 5px;
+    background: #ACBAC9;
+    align-items: stretch;
+}
+
+.chat-container .messaging-form .text
+{
+    border: 0;
+    height: 50px;
+    flex-grow: 1;
+    resize: none;
+    padding: .4rem;
+    color: inherit;
+    font-size: 1rem;
+    border-radius: inherit;
+    box-sizing: border-box;
+    background-color: inherit;
+}
+
+.chat-container .messaging-form .send-btn
+{
+    border: 0;
+    width: 40px;
+    height: 40px;
+    margin: .3rem;
+    padding: .3rem;
+    background-color: inherit;
+}
